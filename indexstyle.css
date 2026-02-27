@@ -1,0 +1,216 @@
+
+:root {
+      --bg: #0f1117;
+      --sidebar-bg: #161820;
+      --card-bg: #1e2030;
+      --accent: #7c3aed;
+      --accent2: #f59e0b;
+      --text: #e2e8f0;
+      --muted: #64748b;
+      --sidebar-width: 220px;
+      --sidebar-collapsed: 60px;
+      --header-height: 60px;
+    }
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-color: #0f1117;
+      color: rgb(238, 240, 249);
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    header {
+      height: 60px;
+      background-color: #161820;
+      border-bottom: 1px solid #2a2d3e;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 16px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+    }
+
+    #logodiv {
+      width: 300px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    header button {
+      background: none;
+      border: none;
+      color: rgb(238, 240, 249);
+      cursor: pointer;
+      padding: 8px;
+      border-radius: 8px;
+      transition: 0.5s;
+      font-size: 20px;
+    }
+
+    header button:hover {
+      background-color: #2a2d3e;
+    }
+
+    .logo {
+      font-family: sans-serif;
+      font-weight: 800;
+      font-size: 20px;
+      background: linear-gradient(135deg, #7c3aed, #bba7f7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: flex;
+      overflow: hidden;
+      width: 220px;
+    }
+
+    nav {
+      width: 200px;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    nav p {
+      background-color: #7c3aed;
+      width: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 25px;
+      height: 40px;
+      font-family: sans-serif;
+      font-weight: 600;
+    }
+
+    nav p:hover {
+      opacity: 0.85;
+    }
+
+    .ikon {
+      background-color: rgb(57, 57, 65);
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .ikon:hover {
+      opacity: 0.85;
+    }
+
+    #navn {
+      width: 150px;
+    }
+
+    #logo {
+      width: 90px;
+    }
+
+    #sidebar {
+      width: 220px;
+      height: 100vh;
+      background-color: #161820;
+      border-right: 1px solid #2a2d3e;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: width 0.3s;
+    }
+
+    #sidebar.collapsed {
+      width: 60px;
+    }
+
+    #sidebar i {
+      color: #7c3aed;
+    }
+
+    #sidebar i:hover {
+      opacity: 0.85;
+    }
+
+    #sidebar .container {
+      display: flex;
+      flex-direction: column;
+      margin-top: 100px;
+      gap: 25px;
+      font-size: 20px;
+      padding-left: 20px;
+    }
+
+    .container div {
+      display: flex;
+      gap: 25px;
+    }
+
+    .container div p {
+      font-size: 15px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .section1 {
+      height: fit-content;
+      width: 925px;
+      margin-top: 100px;
+      margin-left: 60px;
+      padding: 16px;
+      background: linear-gradient( #1a1040 1%, #161921 100%);
+      border: 1px solid #2a2d3e;
+      gap: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      display: flex;
+      flex-direction: column;
+      border-radius: 16px;
+    }
+
+    .section1 h2{
+      margin: 0;
+    }
+
+    .hoved{
+      display: flex;
+      gap: 32px;
+    }
+
+    .hoved div{
+      display: flex;
+      gap: 10px;
+    }
+
+    #ekstra{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .ekstra div{
+      display: flex;
+      gap: 10px;
+    }
+
+    .section1 h2{
+      font-family: sans-serif;
+      font-weight: 800;
+      background: linear-gradient(135deg, #a78bfa, #7c3aed);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    
