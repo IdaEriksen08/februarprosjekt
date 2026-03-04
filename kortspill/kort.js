@@ -5,6 +5,7 @@ const text = document.querySelector("h1")
 const container = document.querySelector("#kortContainer")
 let siste = 0
 start.addEventListener("click", function () {
+    container.innerHTML = ""
     this.style.display = "none"
     biger.style.display = "inline-block"
     lower.style.display = "inline-block"
