@@ -4,8 +4,135 @@
             box-sizing: border-box;
         }
 
+        :root {
+            --bg: #0f1117;
+            --sidebar-bg: #161820;
+            --card-bg: #1e2030;
+            --accent: #7c3aed;
+            --accent2: #f59e0b;
+            --text: #e2e8f0;
+            --muted: #64748b;
+            --sidebar-width: 220px;
+            --sidebar-collapsed: 60px;
+            --header-height: 60px;
+        }
+
+        header {
+            height: 60px;
+            background-color: #161820;
+            border-bottom: 1px solid #2a2d3e;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 16px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+        }
+
+        #logodiv {
+            width: 300px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        header button {
+            background: none;
+            border: none;
+            color: rgb(238, 240, 249);
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 8px;
+            transition: 0.5s;
+            font-size: 20px;
+        }
+
+        header button:hover {
+            background-color: #2a2d3e;
+        }
+
+        .logo {
+            font-family: sans-serif;
+            font-weight: 800;
+            font-size: 20px;
+            background: linear-gradient(135deg, #7c3aed, #bba7f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            overflow: hidden;
+            width: 220px;
+        }
+
+        nav {
+            width: 200px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        nav p {
+            background-color: #7c3aed;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 25px;
+            height: 40px;
+            font-family: sans-serif;
+            font-weight: 600;
+        }
+
+        nav p:hover {
+            opacity: 0.85;
+        }
+
+        .ikon {
+            background-color: rgb(57, 57, 65);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ikon:hover {
+            opacity: 0.85;
+        }
+
+        #navn {
+            width: 150px;
+        }
+
+        #logo {
+            width: 90px;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #0f1117;
+            color: rgb(238, 240, 249);
+        }
+
+
         button {
             max-width: 100%;
+            background-color: #7c3aed;
+            color: white;
+            padding: 3px;
+            border: none;
+            border-radius: 10px;
+            font-family: inherit;
+        }
+
+        button:hover {
+            background-color: #5b21b6;
+            transform: scale(1.05);
+            cursor: pointer;
         }
 
         #kortContainer {
@@ -34,18 +161,7 @@
             display: flex;
             gap: 20px;
         }
+
         .hidden {
             display: none;
-        }
-
-        header {
-            width: 100%;
-            height: 10vh;
-        }
-
-        nav {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px;
         }
