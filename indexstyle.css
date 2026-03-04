@@ -23,7 +23,6 @@
       background-color: #0f1117;
       color: rgb(238, 240, 249);
       display: flex;
-      height: 100vh;
       overflow: hidden;
     }
 
@@ -212,5 +211,26 @@
       background: linear-gradient(135deg, #a78bfa, #7c3aed);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    }
+
+    .section2{
+      position: absolute;
+      left: 285px;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      background-color: pink;
+      margin-top: 300px;
+      height: 300px;
+      width: 920px;
+    }
+
+    #stor{
+      position: absolute;
+      height: 200px;
+      width: 200px;
+    }
+
+    #stor img{
+      height: 200px;
     }
     
