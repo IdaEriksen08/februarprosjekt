@@ -1,0 +1,27 @@
+ body {
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     width: 30% auto;
+     align-items: center;
+     background-color: #0f1117;
+     color: white;
+ }
+
+ button {
+     font-size: large;
+     margin-top: 20px;
+     padding: 5px;
+     background: linear-gradient(to right, purple, blue);
+ }
+
+ .todolist {
+     background-color: antiquewhite;
+     border: 2px solid rgba(255, 255, 0, 0.203);
+     width: 30%;
+     padding: 20px;
+ }
+
+ .done {
+     text-decoration: line-through;
+ }
