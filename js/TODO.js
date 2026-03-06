@@ -1,19 +1,36 @@
 const inputElement = document.querySelector("input")
-const todolistDiv = document.querySelector(".todolist")
+const todolistDiv = document.getElementById("oppgaveliste")
 
-function lagTodo() {
-    const todoElement = document.createElement("li")
-
-    todoElement.innerHTML = inputElement.value
-    todoElement.onclick = function () {
-        todoElement.style.color = "red"
-        todoElement.classList.add("done")
+function leggTil() {
+    if (inputElement.value == "") {
+        // Avslutt funksjonen, om det ikke er noe innhold i input boksen:
+        return
     }
-   
-    inputElement.value = ""
-    todoElement.style.color = "pink"
 
+    const todoElement = document.createElement("li")
     todolistDiv.appendChild(todoElement)
 
 
+    todoElement.innerHTML = inputElement.value
+
+    // Lag en slett knapp, og legg den til på todoElementet vårt:
+    let slett = document.createElement("button");
+    todoElement.appendChild(slett);
+
+    // Definerer teksten og css klassen til knappen:
+    slett.textContent = "Slett";
+    slett.className = "slett";
+    // Definerer hva som skjer når vi trykker på knappen:
+    slett.onclick = function () {
+        todoElement.remove();
+    };
+
+
+    inputElement.value = ""
+
+    document.inputElement.addEventListener("keydown", function(e) {
+        if (e.key == "Enter") {
+            leggTil();
+        }
+    })
 }
