@@ -1,6 +1,14 @@
 const inputElement = document.querySelector("input")
 const todolistDiv = document.getElementById("oppgaveliste")
 
+
+inputElement.addEventListener("keydown", function (e) {
+    if (e.key == "Enter") {
+        leggTil();
+    }
+})
+
+
 function leggTil() {
     if (inputElement.value == "") {
         // Avslutt funksjonen, om det ikke er noe innhold i input boksen:
@@ -28,9 +36,5 @@ function leggTil() {
 
     inputElement.value = ""
 
-    document.inputElement.addEventListener("keydown", function(e) {
-        if (e.key == "Enter") {
-            leggTil();
-        }
-    })
 }
+
