@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,23 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/TODO.css">
 </head>
+
 <body>
-    <h1>To Do liste</h1>
-    <input type="text" placeholder="Skriv in To Do">
-    <button onclick="lagTodo()">Legg til To Do</button>
 
+    <main>
 
-    <ol class="todolist">
-    </ol>
+        <h1>To Do List</h1>
 
-    
-<script src="js/TODO.js"></script>
-        
+        <div class="input-rad">
+            <input type="text" id="input" placeholder="Ny oppgave...">
+            <button class="legg" onclick="leggTil()">Legg til</button>
+        </div>
+
+        <ol id="oppgaveliste"></ol>
+
+    </main>
+    <script src="js/TODO.js"></script>
+
 </body>
+
 </html>
