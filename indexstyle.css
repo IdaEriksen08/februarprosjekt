@@ -14,7 +14,8 @@
 
     }
 
-   
+    .ikon{
+
       background-color: rgb(57, 57, 65);
       color: white;
       width: 40px;
@@ -24,6 +25,7 @@
       align-items: center;
       justify-content: center;
     }
+    
 
     .ikon:hover {
       opacity: 0.85;
@@ -90,7 +92,11 @@
       border: 1px solid #2a2d3e;
       gap: 20px;
       display: flex;
-      flex-wrap: wra header {
+      flex-wrap: wrap
+      b
+      }
+      
+      header {
       height: 60px;
       background-color: #161820;
       border-bottom: 1px solid #2a2d3e;
@@ -162,7 +168,7 @@
       opacity: 0.85;
     }
 
-    .ikon {p;
+    .ikon p{
       display: flex;
       flex-direction: column;
       border-radius: 16px;
