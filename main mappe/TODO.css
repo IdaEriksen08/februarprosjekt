@@ -1,0 +1,229 @@
+body {
+      font-family: Arial, sans-serif;
+      background: #1a1a2e;
+      color: white;
+      display: flex;
+      overflow: hidden;
+    }
+
+    
+.ikon{
+      background-color: rgb(57, 57, 65);
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+
+    .ikon:hover {
+      opacity: 0.85;
+    }
+
+    #navn {
+      width: 150px;
+    }
+
+    #logo {
+      width: 90px;
+    }
+
+    #sidebar {
+      width: 220px;
+      height: 100vh;
+      background-color: #161820;
+      border-right: 1px solid #2a2d3e;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: width 0.3s;
+    }
+
+    #sidebar.collapsed {
+      width: 60px;
+    }
+
+    #sidebar i {
+      color: #7c3aed;
+    }
+
+    #sidebar i:hover {
+      opacity: 0.85;
+    }
+
+    #sidebar .container {
+      display: flex;
+      flex-direction: column;
+      margin-top: 100px;
+      gap: 25px;
+      font-size: 20px;
+      padding-left: 20px;
+    }
+
+    .container div {
+      display: flex;
+      gap: 25px;
+    }
+
+    .container div p {
+      font-size: 15px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    header {
+      height: 60px;
+      background-color: #161820;
+      border-bottom: 1px solid #2a2d3e;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 16px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+    }
+    
+    #logodiv {
+      width: 300px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    
+    header button {
+      background: none;
+      border: none;
+      color: rgb(238, 240, 249);
+      cursor: pointer;
+      padding: 8px;
+      border-radius: 8px;
+      transition: 0.5s;
+      font-size: 20px;
+    }
+    
+    header button:hover {
+      background-color: #2a2d3e;
+    }
+    
+    .logo {
+      font-family: sans-serif;
+      font-weight: 800;
+      font-size: 20px;
+      background: linear-gradient(135deg, #7c3aed, #bba7f7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: flex;
+      overflow: hidden;
+      width: 220px;
+    }
+    
+    nav {
+      width: 200px;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    
+    nav p {
+      background-color: #7c3aed;
+      width: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 25px;
+      height: 40px;
+      font-family: sans-serif;
+      font-weight: 600;
+    }
+    
+    nav p:hover {
+      opacity: 0.85;
+    }
+    
+    .ikon p{
+      display: flex;
+      flex-direction: column;
+      border-radius: 16px;
+    }
+
+    h1 {
+      color: #e94560;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .input-rad {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    input {
+      flex: 1;
+      padding: 12px;
+      background: #16213e;
+      color: white;
+      border: 1px solid #444;
+      border-radius: 8px;
+      font-size: 15px;
+      outline: none;
+    }
+
+
+
+    button.legg {
+      padding: 12px 16px;
+      background: #e94560;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    button.legg:hover {
+      background: #c73652;
+    }
+
+    ol {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background: #16213e;
+      padding: 14px 16px;
+      margin-bottom: 8px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-left: 3px solid #e94560;
+    }
+
+    button.slett {
+      background: transparent;
+      color: #666;
+      border: 1px solid #444;
+      padding: 4px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+
+    button.slett:hover {
+      background: #e94560;
+      color: white;
+      border-color: #e94560;
+    }
+
+    .main{
+      margin-top: 150px;
+      margin-left: 350px;
+    }

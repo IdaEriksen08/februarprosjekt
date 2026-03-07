@@ -3,11 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="trepårad.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stoppeklokke.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <title>Stoppeklokke</title>
 </head>
 
 <body>
@@ -70,24 +72,18 @@
     </div>
   </aside>
 
-    <main>
-            <h1>Tre på rad</h1>
-            <p id="melding" class="x">Spiller X sin tur</p>
-            <div class="brett">
-                <button onclick="klikk(0)"></button>
-                <button onclick="klikk(1)"></button>
-                <button onclick="klikk(2)"></button>
-                <button onclick="klikk(3)"></button>
-                <button onclick="klikk(4)"></button>
-                <button onclick="klikk(5)"></button>
-                <button onclick="klikk(6)"></button>
-                <button onclick="klikk(7)"></button>
-                <button onclick="klikk(8)"></button>
-                <br><br>
-            </div>
-            <button class="reset-btn" onclick="nullstill()">Start på nytt</button>
-    </main>
-    <script src="trepårad.js"></script>
+    <div class="main">
+        <div id="display">00:00:00</div>
+        <button onclick="start()">Start</button>
+        <button onclick="stopp()">Stopp</button>
+        <button onclick="reset()">Reset</button>
+    </div>
+
+
+
+
+    <script src="stoppeklokke.js"></script>
+
 </body>
 
 </html>

@@ -82,21 +82,7 @@
       white-space: nowrap;
     }
 
-    .section1 {
-      height: fit-content;
-      width: 925px;
-      margin-top: 100px;
-      margin-left: 60px;
-      padding: 16px;
-      background: linear-gradient( #1a1040 1%, #161921 100%);
-      border: 1px solid #2a2d3e;
-      gap: 20px;
-      display: flex;
-      flex-wrap: wrap
-      b
-      }
-      
-      header {
+    header {
       height: 60px;
       background-color: #161820;
       border-bottom: 1px solid #2a2d3e;
@@ -111,14 +97,14 @@
       right: 0;
       z-index: 100;
     }
-
+    
     #logodiv {
       width: 300px;
       display: flex;
       align-items: center;
       gap: 12px;
     }
-
+    
     header button {
       background: none;
       border: none;
@@ -129,11 +115,11 @@
       transition: 0.5s;
       font-size: 20px;
     }
-
+    
     header button:hover {
       background-color: #2a2d3e;
     }
-
+    
     .logo {
       font-family: sans-serif;
       font-weight: 800;
@@ -145,13 +131,13 @@
       overflow: hidden;
       width: 220px;
     }
-
+    
     nav {
       width: 200px;
       display: flex;
       justify-content: space-evenly;
     }
-
+    
     nav p {
       background-color: #7c3aed;
       width: 100px;
@@ -163,17 +149,32 @@
       font-family: sans-serif;
       font-weight: 600;
     }
-
+    
     nav p:hover {
       opacity: 0.85;
     }
-
+    
     .ikon p{
       display: flex;
       flex-direction: column;
       border-radius: 16px;
     }
 
+    .section1 {
+      height: fit-content;
+      width: 925px;
+      border-radius: 12px;
+      margin-top: 100px;
+      margin-left: 60px;
+      padding: 16px;
+      background: linear-gradient( #1a1040 1%, #161921 100%);
+      border: 1px solid #2a2d3e;
+      gap: 20px;
+      display: flex;
+      flex-wrap: wrap
+      }
+      
+    
     .section1 h2{
       margin: 0;
     }
@@ -248,7 +249,7 @@
     font-weight: 700;
     margin-left: 10px;
     position: absolute;
-    top: 260px;
+    top: 275px;
     color: white;
    }
 
@@ -323,5 +324,17 @@
 
    a{
    display: grid;
+   text-decoration: none;
+   color: white;
    }
+
+   #andre{
+    width: 200px;
+   }
+
+   #andre p{
+    left: 58px;
+   }
+
+
    
