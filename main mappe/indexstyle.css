@@ -336,5 +336,73 @@
     left: 58px;
    }
 
+   @media (max-width: 768px) {
+
+  body {
+    overflow: auto;
+  }
+
+  #sidebar {
+    width: 60px;
+  }
+
+  .section1 {
+    width: 510px;
+    margin-left: 16px;
+    margin-top: 80px;
+  }
+
+  .hoved {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .grid {
+    width: 550px;
+    margin-left: 16px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .main {
+    flex-wrap: wrap;
+    grid-column: span 2;
+  }
+
+  .stor {
+    width: 510px;
+    height: 200px;
+  }
+
+  .stor p {
+    font-size: 50px;
+    text-align: center;
+    top: 65px;
+    left: 40%;
+  }
+
+  .stor h3 {
+    top: 175px;
+  }
+
+  .klokke, .todoliste {
+    width: 250px;
+  }
+
+  .main2 {
+    flex-direction: row;
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  h2 {
+    margin-left: 16px;
+  }
+
+  #andre{
+    display: none;
+  }
+
+}
+
 
    
