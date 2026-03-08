@@ -344,6 +344,7 @@
 
   #sidebar {
     width: 60px;
+    height: 930px;
   }
 
   .section1 {
@@ -402,6 +403,110 @@
     display: none;
   }
 
+  #trepårad p{
+    left: 35%;
+  }
+
+  .klokke h3{
+    top: 676px;
+  }
+
+  .todoliste h3{
+    top: 676px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  #sidebar {
+    display: none;
+  }
+   header {
+    padding: 8px;
+  }
+
+  #logodiv {
+    width: auto;
+  }
+
+  .logo {
+    font-size: 16px;
+    width: 150px;
+  }
+
+  nav p {
+    width: 80px;
+    font-size: 13px;
+  }
+
+  .section1 {
+    width: 350px;
+    margin-left: 8px;
+    padding: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    width: 300px ;
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stor {
+    width: 350px;
+    height: 160px;
+  }
+
+  .stor p {
+    font-size: 35px;
+    top: 40px;
+  }
+
+  .stor h3 {
+    top: 135px;
+  }
+
+  .main2 {
+    flex-direction: row;
+    width: 90vw;
+    justify-content: space-between;
+  }
+
+  .klokke, .todoliste {
+    width: 169px;
+    height: 130px;
+  }
+
+  .klokke p, .todoliste p {
+    margin-top: 25px;
+    font-size: 28px;
+  }
+
+  .klokke h3 {
+    top: 660px;
+    bottom: 8px;
+  }
+
+  .todoliste h3 {
+    top: 660px;
+    bottom: 8px;
+  }
+
+  h2 {
+    margin-left: 8px;
+    margin-top: 20px;
+  }
+
+  #andre{
+    display: none;
+  }
 }
 
 

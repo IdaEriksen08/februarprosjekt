@@ -19,7 +19,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 350px;
+    margin-left: 340px;
     gap: 10px;
 }
 
@@ -227,4 +227,27 @@ h1 {
 .reset-btn:hover {
     border-color: #a855f7;
     color: #a855f7;
+}
+
+@media (max-width: 768px) {
+
+  body {
+    overflow: auto;
+  }
+
+  #sidebar {
+    width: 60px;
+  }
+
+  main{
+    margin-left: 110px;
+}
+  }
+
+  @media (max-width: 480px) {
+
+     main{
+    margin-left: 10px;
+}
+
 }

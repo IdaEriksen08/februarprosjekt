@@ -204,3 +204,28 @@
             text-decoration: none;
             color: white;
         }
+
+
+        @media (max-width: 768px) {
+
+            body {
+                overflow: auto;
+            }
+
+            #sidebar {
+                width: 60px;
+            }
+
+            #s1 {
+                font-size: 12px;
+                margin-left: 110px;
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            .main {
+                margin-left: 20px;
+            }
+
+        }

@@ -1,6 +1,6 @@
 body {
       font-family: Arial, sans-serif;
-      background: #1a1a2e;
+      background-color: #0f1117;
       color: white;
       display: flex;
       overflow: hidden;
@@ -227,3 +227,26 @@ body {
       margin-top: 150px;
       margin-left: 350px;
     }
+
+    @media (max-width: 768px) {
+
+  body {
+    overflow: auto;
+  }
+
+  #sidebar {
+    width: 60px;
+  }
+
+  .main{
+    margin-left: 110px;
+}
+  }
+
+  @media (max-width: 480px) {
+
+     .main{
+    margin-left: 20px;
+}
+
+}
