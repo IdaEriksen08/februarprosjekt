@@ -200,6 +200,8 @@
      font-size: 15px;
    }
 
+   }
+
    @media (max-width: 480px) {
 
      #display {
@@ -214,6 +216,5 @@
      .main {
        margin-left: 20px;
      }
-
 
    }
