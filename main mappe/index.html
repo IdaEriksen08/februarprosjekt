@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novagames index html</title>
+  <link rel="stylesheet" href="indexstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <div id="logodiv">
+      <button id="mknapp">☰</button>
+      <div class="logo">🎮 NovaGames</div>
+
+    </div>
+    <nav>
+      <div class="ikon"><i class="fa-regular fa-bell"></i></div>
+      <div class="ikon"><i class="fa-regular fa-heart"></i></div>
+      <p>Logg inn</p>
+    </nav>
+  </header>
+
+
+  <aside id="sidebar">
+    <div class="container">
+        <div id="Hjemmeside">
+          <i class="fa-solid fa-house"></i>
+          <p>Hjemmeside</p>
+        </div>
+      <div>
+        <i class="fa-solid fa-clock"></i>
+        <p>Klokke</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-gamepad"></i>
+        <p>Alle spill</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-star"></i>
+        <p>Favoritter</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-fire"></i>
+        <p>Mest populære</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-people-group"></i>
+        <p>Venner</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-diamond"></i>
+        <p>Kortspill</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-dice"></i>
+        <p>Gjett tallet</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-dice-six"></i>
+        <p>Tre på rad</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-headset"></i>
+        <p>Andre spill</p>
+      </div>
+    </div>
+  </aside>
+
+
+  <main>
+    <section class="section1">
+      <h2>Velkommen til NovaGames</h2>
+      <div class="hoved">
+        <div>
+          <i class="fa-solid fa-download"></i>
+          <p>Mange ulike spill!!</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-rocket"></i>
+          <p>Ingen installasjon nødvendig</p>
+        </div>
+        <div id="ekstra">
+          <div>
+            <i class="fa-solid fa-desktop"></i>
+            <p>På hvilken som helst enhet</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <p>Alt gratis</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <h2>Toppvalg for deg</h2>
+    <div class="grid">
+      <div class="main">
+          <div class="stor" id="kort">
+            <p>🃏</p>
+            <h3>Kortspill</h3>
+          </div>
+        <div class="main2">
+          <a href="stoppeklokke.html">
+            <div class="klokke">
+              <p>⏱️</p>
+              <h3>Stoppeklokke</h3>
+            </div>
+          </a>
+          <div class="todoliste">
+            <p>📝</p>
+            <h3>Lag din egen liste!</h3>
+          </div>
+        </div>
+        <div class="stor" id="trepårad">
+          <p>❌⭕</p>
+          <h3>Tre på rad</h3>
+        </div>
+        <div class="stor" id="andre">
+          <p>💟</p>
+          <h3>Andre spill</h3>
+        </div>
+      </div>
+      <div>
+
+      </div>
+    </div>
+  </main>
+  <script>
+
+    const knapp = document.getElementById("mknapp")
+    const sidebar = document.getElementById("sidebar")
+
+    knapp.addEventListener("click", function () {
+      sidebar.classList.toggle("collapsed")
+    })
+
+    const todo = document.querySelector(".todoliste")
+    todo.addEventListener("click", function () {
+      window.location.href = "/main%20mappe/TODO.html"
+    })
+
+    const treparad = document.querySelector("#trepårad")
+    treparad.addEventListener("click", function () {
+      window.location.href = "/trep%C3%A5rad/trep%C3%A5rad.html"
+    })
+
+    const kort = document.querySelector("#kort")
+    kort.addEventListener("click", function () {
+      window.location.href = "/kortspill/kort.html"
+    })
+
+    const Hjemmeside = document.querySelector("#Hjemmeside")
+    Hjemmeside.addEventListener("click", function(){
+       window.location.href = "/main%20mappe/index.html"
+    })
+  </script>
+
+</body>
+
+</html>

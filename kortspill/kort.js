@@ -59,3 +59,9 @@ lower.addEventListener("click", function () {
     container.appendChild(bilde)
     siste = tilfTall
 })
+
+
+ const Hjemmeside = document.querySelector("#Hjemmeside")
+    Hjemmeside.addEventListener("click", function(){
+       window.location.href = "http://127.0.0.1:5501/main%20mappe/index.html"
+    })

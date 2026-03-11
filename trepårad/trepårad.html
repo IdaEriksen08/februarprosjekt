@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="trepårad.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+     <header>
+    <div id="logodiv">
+      <button id="mknapp">☰</button>
+      <div class="logo">🎮 NovaGames</div>
+
+    </div>
+    <nav>
+      <div class="ikon"><i class="fa-regular fa-bell"></i></div>
+      <div class="ikon"><i class="fa-regular fa-heart"></i></div>
+      <p>Logg inn</p>
+    </nav>
+  </header>
+
+
+  <aside id="sidebar">
+    <div class="container">
+        <div id="Hjemmeside">
+          <i class="fa-solid fa-house"></i>
+          <p>Hjemmeside</p>
+        </div>
+      <div>
+        <i class="fa-solid fa-clock"></i>
+        <p>Klokke</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-gamepad"></i>
+        <p>Alle spill</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-star"></i>
+        <p>Favoritter</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-fire"></i>
+        <p>Mest populære</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-people-group"></i>
+        <p>Venner</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-diamond"></i>
+        <p>Kortspill</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-dice"></i>
+        <p>Gjett tallet</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-dice-six"></i>
+        <p>Tre på rad</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-headset"></i>
+        <p>Andre spill</p>
+      </div>
+    </div>
+  </aside>
+
+    <main>
+            <h1>Tre på rad</h1>
+            <p id="melding" class="x">Spiller X sin tur</p>
+            <div class="brett">
+                <button onclick="klikk(0)"></button>
+                <button onclick="klikk(1)"></button>
+                <button onclick="klikk(2)"></button>
+                <button onclick="klikk(3)"></button>
+                <button onclick="klikk(4)"></button>
+                <button onclick="klikk(5)"></button>
+                <button onclick="klikk(6)"></button>
+                <button onclick="klikk(7)"></button>
+                <button onclick="klikk(8)"></button>
+                <br><br>
+            </div>
+            <button class="reset-btn" onclick="nullstill()">Start på nytt</button>
+    </main>
+    <script src="trepårad.js"></script>
+</body>
+
+</html>

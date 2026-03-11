@@ -1,33 +1,13 @@
-
-:root {
-      --bg: #0f1117;
-      --sidebar-bg: #161820;
-      --card-bg: #1e2030;
-      --accent: #7c3aed;
-      --accent2: #f59e0b;
-      --text: #e2e8f0;
-      --muted: #64748b;
-      --sidebar-width: 220px;
-      --sidebar-collapsed: 60px;
-      --header-height: 60px;
-    }
-
-* {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Nunito', sans-serif;
+body {
+      font-family: Arial, sans-serif;
       background-color: #0f1117;
-      color: rgb(238, 240, 249);
+      color: white;
       display: flex;
       overflow: hidden;
-
     }
 
-   
+    
+.ikon{
       background-color: rgb(57, 57, 65);
       color: white;
       width: 40px;
@@ -37,6 +17,7 @@
       align-items: center;
       justify-content: center;
     }
+    
 
     .ikon:hover {
       opacity: 0.85;
@@ -93,17 +74,7 @@
       white-space: nowrap;
     }
 
-    .section1 {
-      height: fit-content;
-      width: 925px;
-      margin-top: 100px;
-      margin-left: 60px;
-      padding: 16px;
-      background: linear-gradient( #1a1040 1%, #161921 100%);
-      border: 1px solid #2a2d3e;
-      gap: 20px;
-      display: flex;
-      flex-wrap: wra header {
+    header {
       height: 60px;
       background-color: #161820;
       border-bottom: 1px solid #2a2d3e;
@@ -118,14 +89,14 @@
       right: 0;
       z-index: 100;
     }
-
+    
     #logodiv {
       width: 300px;
       display: flex;
       align-items: center;
       gap: 12px;
     }
-
+    
     header button {
       background: none;
       border: none;
@@ -136,11 +107,11 @@
       transition: 0.5s;
       font-size: 20px;
     }
-
+    
     header button:hover {
       background-color: #2a2d3e;
     }
-
+    
     .logo {
       font-family: sans-serif;
       font-weight: 800;
@@ -152,13 +123,13 @@
       overflow: hidden;
       width: 220px;
     }
-
+    
     nav {
       width: 200px;
       display: flex;
       justify-content: space-evenly;
     }
-
+    
     nav p {
       background-color: #7c3aed;
       width: 100px;
@@ -170,77 +141,112 @@
       font-family: sans-serif;
       font-weight: 600;
     }
-
+    
     nav p:hover {
       opacity: 0.85;
     }
-
-    .ikon {p;
+    
+    .ikon p{
       display: flex;
       flex-direction: column;
       border-radius: 16px;
     }
 
-    .section1 h2{
-      margin: 0;
+    h1 {
+      color: #e94560;
+      text-align: center;
+      margin-bottom: 24px;
     }
 
-    .hoved{
+    .input-rad {
       display: flex;
-      gap: 32px;
+      gap: 8px;
+      margin-bottom: 16px;
     }
 
-    .hoved div{
+    input {
+      flex: 1;
+      padding: 12px;
+      background: #16213e;
+      color: white;
+      border: 1px solid #444;
+      border-radius: 8px;
+      font-size: 15px;
+      outline: none;
+    }
+
+
+
+    button.legg {
+      padding: 12px 16px;
+      background: #e94560;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    button.legg:hover {
+      background: #c73652;
+    }
+
+    ol {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background: #16213e;
+      padding: 14px 16px;
+      margin-bottom: 8px;
+      border-radius: 8px;
       display: flex;
-      gap: 10px;
+      justify-content: space-between;
+      align-items: center;
+      border-left: 3px solid #e94560;
     }
 
-    #ekstra{
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
+    button.slett {
+      background: transparent;
+      color: #666;
+      border: 1px solid #444;
+      padding: 4px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
     }
 
-    .ekstra div{
-      display: flex;
-      gap: 10px;
+    button.slett:hover {
+      background: #e94560;
+      color: white;
+      border-color: #e94560;
     }
 
-    .section1 h2{
-      font-family: sans-serif;
-      font-weight: 800;
-      background: linear-gradient(135deg, #a78bfa, #7c3aed);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    .main{
+      margin-top: 150px;
+      margin-left: 350px;
     }
 
-   .grid{
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 140px 140px;
-    gap: 8px;
-    margin-bottom: 32px;
-    background-color: #bba7f7;
-    margin-left: 60px;
-    width: 925px;
-   }
+    @media (max-width: 768px) {
 
-   h2{
-    margin-left: 60px;
-    margin-top: 32px;
-    margin-bottom: 20px;
-   }
+  body {
+    overflow: auto;
+  }
 
-   .main{
-    grid-row: span 2;
-   }
+  #sidebar {
+    width: 60px;
+  }
 
-   .kortspill{
-    border-radius: 12px;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-   }
+  .main{
+    margin-left: 110px;
+}
+  }
 
+  @media (max-width: 480px) {
 
-   
+     .main{
+    margin-left: 20px;
+}
+
+}

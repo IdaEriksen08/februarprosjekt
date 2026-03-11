@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #0f0f14;
+    color: #ddd;
+    font-family: monospace;
+    min-height: 100vh;
+    display: flex;
+    gap: 24px;
+    font-family: 'Nunito', sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 340px;
+    gap: 10px;
+}
+
+.ikon {
+    background-color: rgb(57, 57, 65);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.ikon:hover {
+    opacity: 0.85;
+}
+
+#navn {
+    width: 150px;
+}
+
+#logo {
+    width: 90px;
+}
+
+#sidebar {
+    width: 220px;
+    height: 100vh;
+    background-color: #161820;
+    border-right: 1px solid #2a2d3e;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: width 0.3s;
+}
+
+#sidebar.collapsed {
+    width: 60px;
+}
+
+#sidebar i {
+    color: #7c3aed;
+}
+
+#sidebar i:hover {
+    opacity: 0.85;
+}
+
+#sidebar .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    gap: 25px;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.container div {
+    display: flex;
+    gap: 25px;
+}
+
+.container div p {
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+header {
+    height: 60px;
+    background-color: #161820;
+    border-bottom: 1px solid #2a2d3e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+#logodiv {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+header button {
+    background: none;
+    border: none;
+    color: rgb(238, 240, 249);
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+header button:hover {
+    background-color: #2a2d3e;
+}
+
+.logo {
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    background: linear-gradient(135deg, #7c3aed, #bba7f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    overflow: hidden;
+    width: 220px;
+}
+
+nav {
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav p {
+    background-color: #7c3aed;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    height: 40px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+nav p:hover {
+    opacity: 0.85;
+}
+
+.ikon p {
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+}
+
+h1 {
+    font-size: 35px;
+    color: #a855f7;
+    text-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
+}
+
+#melding {
+    font-size: 16px;
+    color: #777;
+}
+
+.brett {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+}
+
+.brett button {
+    width: 100px;
+    height: 100px;
+    background: #1a1a24;
+    border: 1px solid #2a2a3d;
+    border-radius: 4px;
+    color: #ddd;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.brett button:hover:not(:disabled) {
+    background: #22223a;
+}
+
+.brett button.x {
+    color: #00e5b0;
+}
+
+.brett button.o {
+    color: #ff4d6d;
+}
+
+.brett button:disabled {
+    cursor: default;
+}
+
+.reset-btn {
+    background: transparent;
+    border: 1px solid #444;
+    color: #888;
+    font-family: monospace;
+    font-size: 14px;
+    padding: 8px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.reset-btn:hover {
+    border-color: #a855f7;
+    color: #a855f7;
+}
+
+@media (max-width: 768px) {
+
+  body {
+    overflow: auto;
+  }
+
+  #sidebar {
+    width: 60px;
+  }
+
+  main{
+    margin-left: 110px;
+}
+  }
+
+  @media (max-width: 480px) {
+
+     main{
+    margin-left: 10px;
+}
+
+}

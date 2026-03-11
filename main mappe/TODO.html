@@ -2,17 +2,18 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Novagames index html</title>
-  <link rel="stylesheet" href="indexstyle.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="TODO.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-  <header>
+<header>
     <div id="logodiv">
       <button id="mknapp">☰</button>
       <div class="logo">🎮 NovaGames</div>
@@ -28,10 +29,10 @@
 
   <aside id="sidebar">
     <div class="container">
-      <div>
-        <i class="fa-solid fa-house"></i>
-        <p>Hjemmeside</p>
-      </div>
+        <div id="Hjemmeside">
+          <i class="fa-solid fa-house"></i>
+          <p>Hjemmeside</p>
+        </div>
       <div>
         <i class="fa-solid fa-clock"></i>
         <p>Klokke</p>
@@ -70,53 +71,19 @@
       </div>
     </div>
   </aside>
+    <main>
 
-
-  <main>
-    <section class="section1">
-      <h2>Velkommen til NovaGames</h2>
-      <div class="hoved">
-        <div>
-          <i class="fa-solid fa-download"></i>
-          <p>Mange ulike spill!!</p>
+        <div class="main">
+            <h1>To Do List</h1>
+            <div class="input-rad">
+                <input type="text" id="input" placeholder="Ny oppgave...">
+                <button class="legg" onclick="leggTil()">Legg til</button>
+            </div>
+            <ol id="oppgaveliste"></ol>
         </div>
-        <div>
-          <i class="fa-solid fa-rocket"></i>
-          <p>Ingen installasjon nødvendig</p>
-        </div>
-        <div id="ekstra">
-          <div>
-            <i class="fa-solid fa-desktop"></i>
-            <p>På hvilken som helst enhet</p>
-          </div>
-          <div>
-            <i class="fa-solid fa-wand-magic-sparkles"></i>
-            <p>Alt gratis</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <h2>Toppvalg for deg</h2>
-    <div class="grid">
-      <div class="main">
-        <div class="kortspill">
-          <p>Kortspill</p>
-          
-        </div>
-      </div>
-    </div>
-  </main>
-  <script>
-
-    const knapp = document.getElementById("mknapp")
-    const sidebar = document.getElementById("sidebar")
-
-    knapp.addEventListener("click", function () {
-      sidebar.classList.toggle("collapsed")
-    })
-
-  </script>
+    </main>
+    <script src="TODO.js"></script>
 
 </body>
 

@@ -4,17 +4,9 @@
             box-sizing: border-box;
         }
 
-        :root {
-            --bg: #0f1117;
-            --sidebar-bg: #161820;
-            --card-bg: #1e2030;
-            --accent: #7c3aed;
-            --accent2: #f59e0b;
-            --text: #e2e8f0;
-            --muted: #64748b;
-            --sidebar-width: 220px;
-            --sidebar-collapsed: 60px;
-            --header-height: 60px;
+        body {
+            display: flex;
+            overflow: hidden;
         }
 
         header {
@@ -31,6 +23,49 @@
             left: 0;
             right: 0;
             z-index: 100;
+        }
+
+        #sidebar {
+            width: 220px;
+            height: 100vh;
+            background-color: #161820;
+            border-right: 1px solid #2a2d3e;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: width 0.3s;
+        }
+
+        #sidebar.collapsed {
+            width: 60px;
+        }
+
+        #sidebar i {
+            color: #7c3aed;
+        }
+
+        #sidebar i:hover {
+            opacity: 0.85;
+        }
+
+        #sidebar .container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 100px;
+            gap: 25px;
+            font-size: 20px;
+            padding-left: 20px;
+        }
+
+        .container div {
+            display: flex;
+            gap: 25px;
+        }
+
+        .container div p {
+            font-size: 15px;
+            font-weight: 600;
+            white-space: nowrap;
         }
 
         #logodiv {
@@ -152,6 +187,7 @@
             align-items: center;
             height: 90vh;
             gap: 30px;
+            margin-left: 200px;
         }
 
         #buttons {
@@ -161,4 +197,35 @@
 
         .hidden {
             display: none;
+        }
+
+        a {
+            display: grid;
+            text-decoration: none;
+            color: white;
+        }
+
+
+        @media (max-width: 768px) {
+
+            body {
+                overflow: auto;
+            }
+
+            #sidebar {
+                width: 60px;
+            }
+
+            #s1 {
+                font-size: 12px;
+                margin-left: 110px;
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            .main {
+                margin-left: 20px;
+            }
+
         }

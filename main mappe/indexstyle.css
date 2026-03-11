@@ -1,0 +1,513 @@
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-color: #0f1117;
+      color: rgb(238, 240, 249);
+      display: flex;
+      overflow: hidden;
+
+    }
+
+    .ikon{
+
+      background-color: rgb(57, 57, 65);
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+
+    .ikon:hover {
+      opacity: 0.85;
+    }
+
+    #navn {
+      width: 150px;
+    }
+
+    #logo {
+      width: 90px;
+    }
+
+    #sidebar {
+      width: 220px;
+      height: 100vh;
+      background-color: #161820;
+      border-right: 1px solid #2a2d3e;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: width 0.3s;
+    }
+
+    #sidebar.collapsed {
+      width: 60px;
+    }
+
+    #sidebar i {
+      color: #7c3aed;
+    }
+
+    #sidebar i:hover {
+      opacity: 0.85;
+    }
+
+    #sidebar .container {
+      display: flex;
+      flex-direction: column;
+      margin-top: 100px;
+      gap: 25px;
+      font-size: 20px;
+      padding-left: 20px;
+    }
+
+    .container div {
+      display: flex;
+      gap: 25px;
+    }
+
+    .container div p {
+      font-size: 15px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    header {
+      height: 60px;
+      background-color: #161820;
+      border-bottom: 1px solid #2a2d3e;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 16px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+    }
+    
+    #logodiv {
+      width: 300px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    
+    header button {
+      background: none;
+      border: none;
+      color: rgb(238, 240, 249);
+      cursor: pointer;
+      padding: 8px;
+      border-radius: 8px;
+      transition: 0.5s;
+      font-size: 20px;
+    }
+    
+    header button:hover {
+      background-color: #2a2d3e;
+    }
+    
+    .logo {
+      font-family: sans-serif;
+      font-weight: 800;
+      font-size: 20px;
+      background: linear-gradient(135deg, #7c3aed, #bba7f7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: flex;
+      overflow: hidden;
+      width: 220px;
+    }
+    
+    nav {
+      width: 200px;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    
+    nav p {
+      background-color: #7c3aed;
+      width: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 25px;
+      height: 40px;
+      font-family: sans-serif;
+      font-weight: 600;
+    }
+    
+    nav p:hover {
+      opacity: 0.85;
+    }
+    
+    .ikon p{
+      display: flex;
+      flex-direction: column;
+      border-radius: 16px;
+    }
+
+    .section1 {
+      height: fit-content;
+      width: 925px;
+      border-radius: 12px;
+      margin-top: 100px;
+      margin-left: 60px;
+      padding: 16px;
+      background: linear-gradient( #1a1040 1%, #161921 100%);
+      border: 1px solid #2a2d3e;
+      gap: 20px;
+      display: flex;
+      flex-wrap: wrap
+      }
+      
+    
+    .section1 h2{
+      margin: 0;
+    }
+
+    .hoved{
+      display: flex;
+      gap: 32px;
+    }
+
+    .hoved div{
+      display: flex;
+      gap: 10px;
+    }
+
+    #ekstra{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .ekstra div{
+      display: flex;
+      gap: 10px;
+    }
+
+    .section1 h2{
+      font-family: sans-serif;
+      font-weight: 800;
+      background: linear-gradient(135deg, #a78bfa, #7c3aed);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
+   .grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 140px 140px;
+    gap: 8px;
+    margin-bottom: 32px;
+    margin-left: 60px;
+    width: 925px;
+   }
+
+   h2{
+    margin-left: 60px;
+    margin-top: 32px;
+    margin-bottom: 20px;
+   }
+
+   .main{
+    grid-row: span 2;
+    display: flex;
+    gap: 10px;
+   }
+
+   .stor{
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    height: 300px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    background: linear-gradient( #705dbf 1%, #263765 100%);
+   }
+
+   .stor h3{
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 10px;
+    position: absolute;
+    top: 275px;
+    color: white;
+   }
+
+   .stor p{
+    font-size: 60px;
+    text-align: center;
+    position: absolute;
+    top: 80px;
+    left: 83px;
+   }
+   
+   .klokke{
+    height: 150px;
+    width: 200px;
+    background: linear-gradient( #9a4aa1 1%, #df97ce 100%);
+    border-radius: 12px;
+    cursor: pointer;
+   }
+
+   .klokke h3{
+    font-size: 13px;
+    font-weight: 700;
+    margin-left: 10px;
+    position: absolute;
+    top: 450px;
+    color: white;
+   }
+
+   .klokke p{
+    font-size: 35px;
+    text-align: center;
+    margin-top: 40px;
+   }
+
+   .main2{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   }
+
+   .todoliste{
+    height: 150px;
+    width: 200px;
+    background: linear-gradient( #4d6891 1%, #6288b1 100%);
+    border-radius: 12px;
+    cursor: pointer;
+   }
+
+   .todoliste h3{
+    font-size: 13px;
+    font-weight: 700;
+    margin-left: 10px;
+    position: absolute;
+    top: 600px;
+    color: white;
+   }
+
+   .todoliste p{
+    font-size: 35px;
+    text-align: center;
+    margin-top: 40px;
+   }
+   
+   #trepårad p{
+    left: 45px;
+   }
+
+   #trepårad{
+    background: linear-gradient( #332955 1%, #ab3a3a 100%);
+   }
+
+   a{
+   display: grid;
+   text-decoration: none;
+   color: white;
+   }
+
+   #andre{
+    width: 200px;
+   }
+
+   #andre p{
+    left: 58px;
+   }
+
+   @media (max-width: 768px) {
+
+  body {
+    overflow: auto;
+  }
+
+  #sidebar {
+    width: 60px;
+    height: 930px;
+  }
+
+  .section1 {
+    width: 510px;
+    margin-left: 16px;
+    margin-top: 80px;
+  }
+
+  .hoved {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .grid {
+    width: 550px;
+    margin-left: 16px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .main {
+    flex-wrap: wrap;
+    grid-column: span 2;
+  }
+
+  .stor {
+    width: 510px;
+    height: 200px;
+  }
+
+  .stor p {
+    font-size: 50px;
+    text-align: center;
+    top: 65px;
+    left: 40%;
+  }
+
+  .stor h3 {
+    top: 175px;
+  }
+
+  .klokke, .todoliste {
+    width: 250px;
+  }
+
+  .main2 {
+    flex-direction: row;
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  h2 {
+    margin-left: 16px;
+  }
+
+  #andre{
+    display: none;
+  }
+
+  #trepårad p{
+    left: 35%;
+  }
+
+  .klokke h3{
+    top: 676px;
+  }
+
+  .todoliste h3{
+    top: 676px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  #sidebar {
+    display: none;
+  }
+   header {
+    padding: 8px;
+  }
+
+  #logodiv {
+    width: auto;
+  }
+
+  .logo {
+    font-size: 16px;
+    width: 150px;
+  }
+
+  nav p {
+    width: 80px;
+    font-size: 13px;
+  }
+
+  .section1 {
+    width: 350px;
+    margin-left: 8px;
+    padding: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    width: 300px ;
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stor {
+    width: 350px;
+    height: 160px;
+  }
+
+  .stor p {
+    font-size: 35px;
+    top: 40px;
+  }
+
+  .stor h3 {
+    top: 135px;
+  }
+
+  .main2 {
+    flex-direction: row;
+    width: 90vw;
+    justify-content: space-between;
+  }
+
+  .klokke, .todoliste {
+    width: 169px;
+    height: 130px;
+  }
+
+  .klokke p, .todoliste p {
+    margin-top: 25px;
+    font-size: 28px;
+  }
+
+  .klokke h3 {
+    top: 660px;
+    bottom: 8px;
+  }
+
+  .todoliste h3 {
+    top: 660px;
+    bottom: 8px;
+  }
+
+  h2 {
+    margin-left: 8px;
+    margin-top: 20px;
+  }
+
+  #andre{
+    display: none;
+  }
+}
+
+
+   
