@@ -152,10 +152,11 @@ body {
       border-radius: 16px;
     }
 
-    h1 {
-      color: #e94560;
+     h1 {
+      color: rgb(183, 40, 183);
       text-align: center;
       margin-bottom: 24px;
+      font-size: 70px;
     }
 
     .input-rad {
@@ -179,7 +180,7 @@ body {
 
     button.legg {
       padding: 12px 16px;
-      background: #e94560;
+      background: rgb(183, 40, 183);
       color: white;
       border: none;
       border-radius: 8px;
@@ -188,7 +189,7 @@ body {
     }
 
     button.legg:hover {
-      background: #c73652;
+      background: rgb(225, 67, 225);
     }
 
     ol {
@@ -204,7 +205,7 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-left: 3px solid #e94560;
+      border-left: 3px solid rgb(183, 40, 183);
     }
 
     button.slett {
@@ -218,35 +219,7 @@ body {
     }
 
     button.slett:hover {
-      background: #e94560;
+      background: rgb(183, 40, 183);
       color: white;
-      border-color: #e94560;
+      border-color: rgb(183, 40, 183);
     }
-
-    .main{
-      margin-top: 150px;
-      margin-left: 350px;
-    }
-
-    @media (max-width: 768px) {
-
-  body {
-    overflow: auto;
-  }
-
-  #sidebar {
-    width: 60px;
-  }
-
-  .main{
-    margin-left: 110px;
-}
-  }
-
-  @media (max-width: 480px) {
-
-     .main{
-    margin-left: 20px;
-}
-
-}
